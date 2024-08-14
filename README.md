@@ -1,4 +1,39 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app)
+
+## Meme for Maddy
+
+```bash
+maddy-app/
+├── src/
+│   ├── components/
+│   │   ├── Header.tsx
+│   │   ├── Footer.tsx
+│   │   ├── WalletProvider.tsx
+│   ├── pages/
+│   │   ├── _app.tsx
+│   │   ├── index.tsx
+│   │   ├── about.tsx
+│   │   ├── tokenomics.tsx
+│   │   ├── roadmap.tsx
+│   │   ├── how-to-buy.tsx
+│   │   ├── faq.tsx
+│   │   ├── contact.tsx
+│   │   ├── whitepaper.tsx
+│   │   ├── audit.tsx
+│   │   ├── staking.tsx
+│   ├── styles/
+│   │   ├── globals.css
+│   │   ├── Home.module.css
+│   ├── public/
+│   └── utils/
+├── .eslintrc.json
+├── next.config.js
+├── package.json
+├── postcss.config.js
+├── tailwind.config.js
+├── tsconfig.json
+└── README.md
+```
 
 ## Getting Started
 
