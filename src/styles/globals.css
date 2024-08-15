@@ -1,5 +1,3 @@
-/* globals.css */
-
 /* General reset and styles */
 html, body {
   padding: 0;
@@ -7,36 +5,31 @@ html, body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   background-color: #1A1A1A;
   color: #FFFFFF;
+  height: 100%;
+  width: 100%;
 }
 
 * {
   box-sizing: border-box;
 }
 
-/* Container for the entire page */
+/* Container styling */
 .container {
   min-height: 100vh;
-  padding: 0 1rem;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  background: url('/Banner_Maddy_1500x500.png') no-repeat center center;
-  background-size: contain;
-  background-attachment: fixed;
 }
 
-/* Header styles */
+/* Header styling */
 .header {
   width: 100%;
   padding: 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  position: fixed;
-  top: 0;
-  left: 0;
   background-color: rgba(0, 0, 0, 0.8);
-  z-index: 1000;
 }
 
 .nav {
@@ -45,63 +38,44 @@ html, body {
   justify-content: center;
 }
 
-.nav a {
+.nav-link {
   color: #FF69B4;
   text-decoration: none;
   font-size: 1.1rem;
   font-weight: bold;
 }
 
-.nav a:hover {
+.nav-link:hover {
   color: #FFFFFF;
 }
 
-/* Wallet container and button positioning */
+/* Wallet container */
 .wallet-container {
   position: absolute;
   right: 1rem;
   top: 1rem;
 }
 
-/* Title fixed positioning */
-.title-container {
-  position: fixed;
-  top: 4rem; /* Adjust this value if needed for different screen sizes */
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 999;
-  text-align: center;
-}
-
-.title {
-  font-size: 4rem;
-  margin: 0;
-  font-family: 'Poppins', sans-serif;
-}
-
-.highlight {
-  color: #FF69B4; /* Your primary color */
-  font-family: 'Poppins', sans-serif;
-}
-
 /* Main section styling */
 .main {
-  padding: 12rem 1rem 5rem; /* Adjusted for space below the fixed title */
   flex: 1;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-.description {
   text-align: center;
-  margin: 1.5rem 0;
-  font-size: 1.25rem;
-  max-width: 600px;
+  width: 100%;
+  padding: 2rem;
 }
 
-/* Footer styles */
+/* Centered image styling */
+.centered-image {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  max-height: 80vh; /* Adjust max height to ensure it's visible without scrolling */
+}
+
+/* Footer styling */
 .footer {
   width: 100%;
   padding: 2rem 0;
@@ -112,11 +86,13 @@ html, body {
 
 .footerLinks {
   margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
 }
 
 .footerLinks a {
   color: white;
-  margin: 0 1rem;
   text-decoration: none;
 }
 
@@ -124,47 +100,23 @@ html, body {
   text-decoration: underline;
 }
 
-/* Mobile Specific Adjustments */
+/* Mobile adjustments */
 @media (max-width: 768px) {
-  .main {
-    padding: 14rem 1rem 5rem; /* Additional space for the fixed title */
+  .header {
+    flex-direction: column;
   }
 
-  .title {
-    font-size: 2.5rem;
+  .nav {
+    flex-direction: column;
+    gap: 0.5rem;
   }
 
-  .description {
-    font-size: 1rem;
-    margin: 1rem 0;
+  .wallet-container {
+    position: static;
+    margin-top: 1rem;
   }
 
-  .footerLinks a {
-    margin: 0 0.5rem;
+  .centered-image {
+    max-width: 90%;
   }
-}
-
-/* Desktop Specific Adjustments */
-@media (min-width: 769px) {
-  .title {
-    font-size: 4rem;
-  }
-
-  .description {
-    font-size: 1.5rem;
-  }
-}
-
-/* Wallet Button Custom Styles */
-.wallet-adapter-button {
-    background-color: #FF69B4 !important; /* Primary color */
-    border-radius: 8px;
-    color: white !important;
-    padding: 10px 20px;
-    font-size: 16px;
-    font-weight: bold;
-}
-
-.wallet-adapter-button:hover {
-    background-color: #C71585 !important; /* Darker shade for hover */
 }
