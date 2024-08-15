@@ -1,36 +1,28 @@
 const HowToBuy: React.FC = () => {
     return (
-      <div>
-        <h1>How to Buy MADDY Token</h1>
-        <p>
-          Purchasing MADDY tokens is straightforward, whether you are new to cryptocurrency or an experienced investor. 
-          Follow the steps below to get started:
-        </p>
-        <ol>
-          <li>
-            <strong>Step 1: Create a Wallet</strong> - If you are new to Solana and do not already have a Solana-compatible wallet, we recommend using 
-            Phantom or OKX or Backpack. Download and set up your wallet, ensuring you securely store your recovery phrase.
-          </li>
-          <li>
-            <strong>Step 2: Fund Your Wallet</strong> - Transfer SOL (Solana Native Token) to your wallet. You will need SOL 
-            to purchase MADDY tokens and to pay for transaction fees.
-          </li>
-          <li>
-            <strong>Step 3: Connect Your Wallet</strong> - On the Meme for Maddy platform or on DEXScreener or Meteora, click Connect Wallet and select your wallet.
-          </li>
-          <li>
-            <strong>Step 4: Purchase MADDY Tokens</strong> - Navigate to the token sale page and enter the amount of MADDY tokens 
-            you wish to purchase. Confirm the transaction, and your MADDY tokens will be sent to your wallet.
-          </li>
-          <li>
-            <strong>Step 5: Stay Involved</strong> - Join our community on social media, stake your MADDY tokens, and stay updated 
-            on the latest developments.
-          </li>
-        </ol>
-        <p>
-          With these steps, you will be part of a community dedicated to using blockchain technology for good. 
-          Thank you for supporting Meme for Maddy!
-        </p>
+      <div className="container">
+        <main className="main">
+          <h1>How to Buy MADDY Tokens</h1>
+          <p>
+            Purchasing MADDY tokens is simple and can be done in a few steps. Follow the guide below to get started:
+          </p>
+          <h2>Step 1: Set Up Your Wallet</h2>
+          <p>
+            Download and set up a cryptocurrency wallet that supports Solana, such as Phantom or OKX Wallet.
+          </p>
+          <h2>Step 2: Fund Your Wallet</h2>
+          <p>
+            Purchase SOL (Solana) from an exchange like Binance or Coinbase and transfer it to your wallet.
+          </p>
+          <h2>Step 3: Buy MADDY Tokens</h2>
+          <p>
+            Use a decentralized exchange (DEX) like Moonshot and Meteora to swap your SOL for MADDY tokens.
+          </p>
+          <h2>Step 4: Secure Your Tokens</h2>
+          <p>
+            Ensure your MADDY tokens are securely stored in your wallet. You can now participate in staking and other platform activities.
+          </p>
+        </main>
       </div>
     );
   }

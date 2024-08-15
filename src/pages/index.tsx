@@ -14,14 +14,14 @@ const Home: React.FC = () => {
 
       <header className="header">
         <nav className="nav">
-          <Link href="/about" passHref><a className="nav-link">About</a></Link>
-          <Link href="/tokenomics" passHref><a className="nav-link">Tokenomics</a></Link>
-          <Link href="/roadmap" passHref><a className="nav-link">Roadmap</a></Link>
-          <Link href="/how-to-buy" passHref><a className="nav-link">How to Buy</a></Link>
-          <Link href="/faq" passHref><a className="nav-link">FAQ</a></Link>
-          <Link href="/contact" passHref><a className="nav-link">Contact</a></Link>
-          <Link href="/whitepaper" passHref><a className="nav-link">Whitepaper</a></Link>
-          <Link href="/staking" passHref><a className="nav-link">Staking</a></Link>
+          <Link href="/about" className="nav-link">About</Link>
+          <Link href="/tokenomics" className="nav-link">Tokenomics</Link>
+          <Link href="/roadmap" className="nav-link">Roadmap</Link>
+          <Link href="/how-to-buy" className="nav-link">How to Buy</Link>
+          <Link href="/faq" className="nav-link">FAQ</Link>
+          <Link href="/contact" className="nav-link">Contact</Link>
+          <Link href="/whitepaper" className="nav-link">Whitepaper</Link>
+          <Link href="/staking" className="nav-link">Staking</Link>
         </nav>
         <div className="wallet-container">
           <ConnectWallet />
@@ -30,7 +30,7 @@ const Home: React.FC = () => {
 
       <main className="main">
         <Image 
-          src="/maddy-logo.png" 
+          src="/Banner_MemeMaddy.png" 
           alt="Meme for Maddy" 
           width={500}  
           height={500} 
@@ -42,8 +42,8 @@ const Home: React.FC = () => {
         <p>&copy; {new Date().getFullYear()} Meme for Maddy. All Rights Reserved.</p>
         <div className="footerLinks">
           <a href="https://x.com" target="_blank" rel="noopener noreferrer">X</a>
-          <Link href="/terms" passHref><a>Terms & Conditions</a></Link>
-          <Link href="/privacy" passHref><a>Privacy Policy</a></Link>
+          <Link href="/terms" className="footer-link">Terms & Conditions</Link>
+          <Link href="/privacy" className="footer-link">Privacy Policy</Link>
         </div>
       </footer>
     </div>

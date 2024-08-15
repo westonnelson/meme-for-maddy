@@ -19,9 +19,7 @@ maddy-app/
 │   │   ├── roadmap.tsx
 │   │   ├── how-to-buy.tsx
 │   │   ├── faq.tsx
-│   │   ├── contact.tsx
 │   │   ├── whitepaper.tsx
-│   │   ├── audit.tsx
 │   │   ├── staking.tsx
 │   ├── styles/
 │   │   ├── globals.css
