@@ -16,7 +16,7 @@ const HowToBuy: React.FC = () => {
           </p>
           <h2>Step 3: Buy MADDY Tokens</h2>
           <p>
-            Use a decentralized exchange (DEX) like Moonshot and Meteora to swap your SOL for MADDY tokens.
+            Use a decentralized exchange (DEX) like Moonshot and Meteora to swap your SOL for MADDY tokens. The official contract address is 4ybmwLtryzuoZtozW7KiJkhtGsuUbkNidXNP3bsF1a49 on Solana.
           </p>
           <h2>Step 4: Secure Your Tokens</h2>
           <p>

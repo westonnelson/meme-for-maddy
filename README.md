@@ -4,6 +4,8 @@
 
 Visit the app at <https://memeformaddy.com>
 
+Contract Address: 4ybmwLtryzuoZtozW7KiJkhtGsuUbkNidXNP3bsF1a49
+
 ## Meme for Maddy
 
 ```bash
