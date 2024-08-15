@@ -1,6 +1,8 @@
 # This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app)
 
-## Token to be deployed on Solana blockchain with multi-chain deployment to potentially follow using LayerZero tech stack.
+## Token to be deployed on Solana blockchain with multi-chain deployment to potentially follow using LayerZero tech stack
+
+Visit the app at <https://memeformaddy.com>
 
 ## Meme for Maddy
 
