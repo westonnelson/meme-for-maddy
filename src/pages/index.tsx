@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import DexChart from '../components/DexChart'; // Make sure this path is correct according to your folder structure
+import DexChart from '../components/DexChart';
 import styles from '../styles/Home.module.css';
 
 const Home: React.FC = () => {
@@ -22,32 +22,41 @@ const Home: React.FC = () => {
         <div className={styles.walletContainer}>
           <button className={styles.walletButton}>Connect Wallet</button>
         </div>
-        <div className={styles.divider}></div>
       </header>
 
       <main className={styles.mainContent}>
         <h1>Meme for Maddy</h1>
         <h2>Token Symbol: MADDY</h2>
         <p>Contract Address: 4ybmwLtryzuoZtozW7KiJkhtGsuUbkNidXNP3bsF1a49</p>
-        <div className={styles.divider}></div> {/* Divider between main content and footer */}
-        <Image src="/Banner_Maddy_1500x500.png" alt="Meme for Maddy" width={750} height={250} />
-        <div className={styles.divider}></div> {/* Divider between main content and footer */}
+        <div className={styles.divider}></div>
+        <Image
+          src="/Banner_Maddy_1500x500.png"
+          alt="Meme for Maddy"
+          width={750}
+          height={250}
+          className={styles.bannerImage}
+        />
+        <div className={styles.divider}></div>
         <DexChart />
       </main>
-      <div className={styles.divider}></div> {/* Divider between main content and footer */}
 
-<footer className={styles.footer}>
-  <p>&copy; {new Date().getFullYear()} Meme for Maddy. All Rights Reserved.</p>
-  <div className={styles.footerLinks}>
-    <a href="https://solscan.io/token/4ybmwLtryzuoZtozW7KiJkhtGsuUbkNidXNP3bsF1a49" target="_blank" rel="noopener noreferrer" className={styles.navLink}>
-      View MADDY on Solscan
-    </a>
-    <Link href="/terms" className={styles.navLink}>Terms & Conditions</Link>
-    <Link href="/privacy" className={styles.navLink}>Privacy Policy</Link>
-  </div>
-</footer>
-</div>
-);
+      <footer className={styles.footer}>
+        <p>&copy; {new Date().getFullYear()} Meme for Maddy. All Rights Reserved.</p>
+        <div className={styles.footerLinks}>
+          <a
+            href="https://solscan.io/token/4ybmwLtryzuoZtozW7KiJkhtGsuUbkNidXNP3bsF1a49"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.footerLink}
+          >
+            View MADDY on Solscan
+          </a>
+          <Link href="/terms" className={styles.footerLink}>Terms & Conditions</Link>
+          <Link href="/privacy" className={styles.footerLink}>Privacy Policy</Link>
+        </div>
+      </footer>
+    </div>
+  );
 };
 
 export default Home;

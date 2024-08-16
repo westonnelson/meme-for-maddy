@@ -47,7 +47,7 @@ const DexChart: React.FC = () => {
       </div>
 
       <a 
-        href="https://dexscreener.com/solana/4ybmwltryzuoztozw7kijkhtgsuubknidxnp3bsf1a49" 
+        href="https://dexscreener.com/solana/4ybmwLtryzuoZtozW7KiJkhtGsuUbkNidXNP3bsF1a49" 
         className="buy-button" 
         target="_blank" 
         rel="noopener noreferrer"
