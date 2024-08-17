@@ -47,7 +47,7 @@ const DexChart: React.FC = () => {
       </div>
 
       <a 
-        href="https://dexscreener.com/solana/4ybmwLtryzuoZtozW7KiJkhtGsuUbkNidXNP3bsF1a49" 
+        href="https://app.meteora.ag/pools/ABW34Z7Cp1t6AqKWXGDXohwXffJpQKFdyv42XuVTuDAZ" 
         className="buy-button" 
         target="_blank" 
         rel="noopener noreferrer"
