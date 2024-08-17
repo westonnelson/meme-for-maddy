@@ -6,13 +6,13 @@ const DexChart: React.FC = () => {
       <style jsx>{`
         #dexscreener-embed {
           position: relative;
-          width: 100%;
-          padding-bottom: 125%;
-        }
-        @media (min-width: 1400px) {
-          #dexscreener-embed {
-            padding-bottom: 65%;
-          }
+          padding-bottom: 56.25%; /* 16:9 aspect ratio */
+          height: 0;
+          overflow: hidden;
+          max-width: 600px; /* Set a maximum width */
+          width: 100%; /* Ensure it scales with the parent container */
+          margin: 0 auto; /* Center the chart */
+          background: #000;
         }
         #dexscreener-embed iframe {
           position: absolute;
@@ -41,7 +41,7 @@ const DexChart: React.FC = () => {
 
       <div id="dexscreener-embed">
         <iframe 
-          src="https://dexscreener.com/solana/FYJEgXFy1RkDTxNrX3dW1gxpE7YrzcHDhnv9xMb2N4H2?embed=1&theme=dark&trades=0&info=0"
+          src="https://dexscreener.com/solana/ABW34Z7Cp1t6AqKWXGDXohwXffJpQKFdyv42XuVTuDAZ?embed=1&theme=dark&trades=0&info=0"
           allowFullScreen
         ></iframe>
       </div>
